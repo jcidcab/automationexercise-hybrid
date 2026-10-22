@@ -1,5 +1,5 @@
 export function newUser() {
-  const unique = Date.now();
+  const unique = `${Date.now()}${Math.floor(Math.random() * 1000)}`;
 
   return {
     name: `qa_user_${unique}`,
